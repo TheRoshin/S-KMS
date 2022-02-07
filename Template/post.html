@@ -14,39 +14,44 @@
     </head>
     <body>
         <main>
-        
-            <div class="right-menu">
-                <div class="left" slot="left">
-                    <h1>C-KMS</h1>
-                </div>
-                <div class="right" slot="right">
-                    <a href="#" class="user">
-                        <i class="far fa-user" style="font-size: 36px"></i>
-                    </a>
-                    <a href="option.html" class="home">
-                        <i class="fas fa-home" style="font-size: 36px"></i>
-                    </a>
-                    <a href="#" class="comments">
-                        <i class="fas fa-comments" style="font-size: 36px"></i>
-                    </a>
-                </div>
-            </div>
-            
             <div class="container">
+        
+                <div class="right-menu">
+                    <div class="left" slot="left">
+                        <h1>S-KMS</h1>
+                    </div>
+                    <div class="right" slot="right">
+                        <a href="#" class="user">
+                            <i class="far fa-user" style="font-size: 36px"></i>
+                        </a>
+                        <a href="option.html" class="home">
+                            <i class="fas fa-home" style="font-size: 36px"></i>
+                        </a>
+                        <a href="#" class="comments">
+                            <i class="fas fa-comments" style="font-size: 36px"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            
                 <div class="row">
                     <div class="col">
-                        <h1>Add a Topic</h1>
-                        <form  action="post.html">
-                            <p><strong>Topic Title:</strong><br>
-                            <input type="text" name="topic_title" size=40 maxlength=150>
-                            <P><strong>Post Text:</strong><br>
-                            <textarea name="post_text" rows=20 cols=100 wrap=virtual></textarea>
-                            <P><input type="submit" name="submit" value="post"></p>
+                        <h3>Add a Topic</h3>
+                        <form action="post.html">
+                            <div>
+                                <strong>Topic Title:</strong><br>
+                                <input type="text" name="topic_title" size=40 maxlength=150>
+                                <strong>Post Text:</strong><br>
+                                <textarea name="post_text" rows=20 cols=100 wrap=virtual></textarea><br><br>
+                            </div>
+                            <div>
+                                <input type="submit" name="submit" value="Post">
+                                <input type="reset" name="reset" value="Clear">
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-
         </main>
         <script src="script.js"></script>
     </body>

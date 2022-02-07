@@ -21,7 +21,7 @@
                 
                 <div class="right-menu">
                     <div class="left" slot="left">
-                        <h1>C-KMS</h1>
+                        <h1>S-KMS</h1>
                     </div>
                     <div class="right" slot="right">
                         <a href="#" class="user">
@@ -36,35 +36,39 @@
                     </div>
                 </div>
 
-                <div class="slideshow-container">
-                    <div class="mySlide">
-                        <h1>Malware</h1>
-                        <p>Malware: is malicious software such as spyware, ransomware, viruses and worms</p>
-                        <h2>Threats</h2>
-                        <p>Fake downloads, Unkown email, Socila engineering, and Phishing link<p>
-                        <h2>Solution</h2>
-                        <p>Install anti-virus, Regularly update software, Only buy Apps from trusted sources, Dont click on suspicious links or download attachments from unknown sources, and Install Firewall</p>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
-                    <div class="mySlide">
-                        <h1>Phishing</h1>
-                        <p>Phishing: the fraudulent practice of sending emails purporting to be from reputable companies in order to induce individuals to reveal personal information, such as passwords and credit card numbers.</p>
-                        <h2>Threats</h2>
-                        <p>Phising email, spam call, and unreconalble link</p>
-                        <h2>Solution</h2>
-                        <p>Verify a Site’s Security, Think Before You Click!, Keep Your Browser Up to Date, Use Firewalls, and Use Antivirus Software</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h1>Malware</h1>
+                            <p>Malware: is malicious software such as spyware, ransomware, viruses and worms</p>
+                            <h2>Threats</h2>
+                            <p>Fake downloads, Unkown email, Socila engineering, and Phishing link<p>
+                            <h2>Solution</h2>
+                            <p>Install anti-virus, Regularly update software, Only buy Apps from trusted sources, Dont click on suspicious links or download attachments from unknown sources, and Install Firewall</p> 
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Phishing</h1>
+                            <p>Phishing: the fraudulent practice of sending emails purporting to be from reputable companies in order to induce individuals to reveal personal information, such as passwords and credit card numbers.</p>
+                            <h2>Threats</h2>
+                            <p>Phising email, spam call, and unreconalble link</p>
+                            <h2>Solution</h2>
+                            <p>Verify a Site’s Security, Think Before You Click!, Keep Your Browser Up to Date, Use Firewalls, and Use Antivirus Software</p>        
+                        </div>
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>    
+                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
                 </div>
 
-                <!-- Dots/bullets/indicators -->
-                <div class="dot-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div>
-
-                
-                
                 
                 <div class="row">
                     <div class="col">
@@ -91,5 +95,6 @@
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

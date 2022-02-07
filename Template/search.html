@@ -15,38 +15,39 @@
     </head>
     <body>
         <main>
+            <div class="container">
             
-            <div class="right-menu">
-                <div class="left" slot="left">
-                    <h1>C-KMS</h1>
+                <div class="right-menu">
+                    <div class="left" slot="left">
+                        <h1>S-KMS</h1>
+                    </div>
+                    <div class="right" slot="right">
+                        <a href="#" class="user">
+                            <i class="far fa-user" style="font-size: 36px"></i>
+                        </a>
+                        <a href="option.html" class="home">
+                            <i class="fas fa-home" style="font-size: 36px"></i>
+                        </a>
+                        <a href="#" class="comments">
+                            <i class="fas fa-comments" style="font-size: 36px"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="right" slot="right">
-                    <a href="#" class="user">
-                        <i class="far fa-user" style="font-size: 36px"></i>
-                    </a>
-                    <a href="option.html" class="home">
-                        <i class="fas fa-home" style="font-size: 36px"></i>
-                    </a>
-                    <a href="#" class="comments">
-                        <i class="fas fa-comments" style="font-size: 36px"></i>
-                    </a>
-                </div>
-            </div>
 
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                  <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
                 </div>
+                
+                    
+                <p>Click on the button to open the search box.</p>
+                <button class="openBtn" onclick="openSearch()">Open Search Box</button>
             </div>
-              
-            
-            <p>Click on the button to open the search box.</p>
-            <button class="openBtn" onclick="openSearch()">Open Search Box</button>
-
         </main>
         <script src="script.js"></script>
     </body>
