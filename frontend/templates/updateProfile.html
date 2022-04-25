@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Webpage</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--using-FontAwesome-------------->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        {% load static  %}
+        <link href="{% static 'css/basic.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/footer.css' %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <div class="container">
+        
+                <div class="right-menu">
+                    <div class="left" slot="left">
+                        <h1>S-KMS</h1>
+                    </div>
+                    <div class="right" slot="right">
+                        <a href="#" class="user">
+                            <i class="far fa-user" style="font-size: 36px"></i>
+                        </a>
+                        <a href="{%url 'home' %}" class="home">
+                            <i class="fas fa-home" style="font-size: 36px"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            
+                <div class="row">
+                    <div class="col">
+                        <h3>Update Profile</h3>
+                        <form action="/user/updateProfile/{{pro.slug}}/", method='POST', enctype="multipart/form-data">
+                            <div>
+                                {% csrf_token %}
+                                {{form.as_p}}
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Update</button>
+                                <!--<button type="submit" >Update</button>-->
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                                    <a href="{%url 'profile'  pro.slug %}">Cancel</a>
+                                </button>
+                            </div>
+                            {% comment %} <div>
+                                <input type="submit" name="submit" value="Post">
+                                <input type="reset" name="reset" value="Clear">
+                            </div> {% endcomment %}
+                        </form>
+                        {% if message %}
+                        <p class = 'mt-5'> {{message}} </p>
+                         {% endif %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-distributed">
+            <h1>Contact<span>SKMS</span></h1>
+            <br><br>
+            <div class="footer-left">
+                <h2>Administative</h2>
+                <br>
+				<p class="footer-links">
+                    <ul>
+                        <li>
+                            <p>
+                                Roshin Roychan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">roshinroychan@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                William Lovelace &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">williamlovelace@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Jaquavious Gotel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">jaquaviousgotel@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ankush Singh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">ankushsingh@smks.com</a></i>
+                            </p>
+                        </li>
+                    </ul>
+				</p>
+			</div>
+
+			<div class="footer-center">
+                <h2>Support</h2>
+				<div>
+					<p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Ankush Singh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">ankushsingh@supportsmks.com</a></i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Jaquavious Gotel &nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">jaquaviousgotel@supportsmks.com</a></i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+				</div>
+			</div>
+			<div class="footer-right">
+                <h2>Web Service</h2>
+				<p class="footer-company-about"></p>
+				<div class="footer-icons">
+                    <ul>
+                        <li>
+                            <p>
+                                William Lovelace &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">williamlovelace@webservicesmks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Roshin Roychan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">roshinroychan@webservicesmks.com</a></i>
+                            </p>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</footer>
+        {% load static  %}
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>

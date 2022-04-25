@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Webpage</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!--using-FontAwesome-------------->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        {% load static  %}
+        <link href="{% static 'css/basic.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/nav.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/footer.css' %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <div class="grid-container">
+                <div class="container">
+                    <div class="right-menu">
+                        <div class="left" slot="left">
+                            <h1>S-KMS</h1>
+                        </div>
+                        <div class="right" slot="right">
+                            <a href="{%url 'profile' user.username  %}" class="user">
+                                <i class="bi bi-person-circle" style="font-size: 36px" color="darkblue"></i>
+                            <a href="{% url 'home' %}" class="home">
+                                <i class="fas fa-home" style="font-size: 36px" color="darkblue"></i>
+                            </a>
+                            <a href="{% url 'logout' %}">
+                                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">LOGOUT</button>
+                            </a>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" class="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h1>Malware</h1>
+                                <p>Malware: is malicious software such as spyware, ransomware, viruses and worms</p>
+                                <h2>Threats</h2>
+                                <p>Fake downloads, Unkown email, Socila engineering, and Phishing link<p>
+                                <h2>Solution</h2>
+                                <p>Install anti-virus, Regularly update software, Only buy Apps from trusted sources, Dont click on suspicious links or download attachments from unknown sources, and Install Firewall</p> 
+                            </div>
+                            <div class="carousel-item">
+                                <h1>Phishing</h1>
+                                <p>Phishing: the fraudulent practice of sending emails purporting to be from reputable companies in order to induce individuals to reveal personal information, such as passwords and credit card numbers.</p>
+                                <h2>Threats</h2>
+                                <p>Phising email, spam call, and unreconalble link</p>
+                                <h2>Solution</h2>
+                                <p>Verify a Site’s Security, Think Before You Click!, Keep Your Browser Up to Date, Use Firewalls, and Use Antivirus Software</p>        
+                            </div>
+                        </div>
+                        <p></p>
+                    </div>
+
+                    <div class="row">
+                        {% if message %}
+                        <p class = 'mt-5'> {{message}} </p>
+                        {% endif %}
+                        <div class="col">
+                            <ul>
+                                <h1>Navigation</h1>
+                                <li><a href="{% url 'counter' %}">Countermeasure</a></li>
+                                <li><a href="{% url 'asset' %}">Asset</a></li>
+                                <li><a href="{% url 'threat' %}">Threat</a></li>
+                                <li><a href="{% url 'memory' %}">Memory Protection</a></li>
+                                <li><a href="{% url 'c_code' %}">C-Code Analysis</a></li>
+                                <li><a href="{% url 'threat_by' %}">Threat by Confidentiality of Data</a></li>
+                                <li><a href="{% url 'countermeasure_by' %}">Countermeasure by Confidentiality of Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <a href="{% url 'fqa' %}"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">FQA</button></a>
+                                <p>FQA (frequently questioned answers) are conventions or mandates scrutinized by individuals or groups who doubt their validity. 
+                                    (The singular and plural of this term have the same abbreviation: FQA.) Typically, 
+                                    an FQA starts out as an axiom, rule or principle that is never questioned.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <a href="{% url 'post' %}"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">POST</button></a>
+                                <p></p>                                
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <a href="{% url 'search' %}"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SEARCH</button></a>
+                                <p>Search are short pieces of text that describe your site's content. Search engines show meta 
+                                    descriptions below the page title in search results if they can't find site content that's more relevant to a visitor's search terms</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <a href="{% url 'rankings' %}"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">RANKINGS</button></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    <p><p></p></p>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li>
+                                    <a href="https://www.cybok.org/knowledgebase/" target="_blank" rel="noopener noreferrer">CyBok</a>
+                                    <a href="https://securityawareness.usalearning.gov/" target="_blank" rel="noopener noreferrer">Secuity Awarness Hub</a>
+                                    <a href="https://www.cisa.gov/cybersecurity" target="_blank" rel="noopener noreferrer">CISA</a>
+                                    <a href="https://www.cisa.gov/cyber-safety" target="_blank" rel="noopener noreferrer">Cyber Safety</a>
+                                    <a href="https://www.cybersmile.org/what-we-do/advice-help/online-security/hacking" target="_blank" rel="noopener noreferrer">Hacking</a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-distributed">
+            <h1>Contact<span>SKMS</span></h1>
+            <br><br>
+            <div class="footer-left">
+                <h2>Administative</h2>
+                <br>
+				<p class="footer-links">
+                    <ul>
+                        <li>
+                            <p>
+                                Roshin Roychan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">roshinroychan@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                William Lovelace &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">williamlovelace@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Jaquavious Gotel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">jaquaviousgotel@smks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ankush Singh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">ankushsingh@smks.com</a></i>
+                            </p>
+                        </li>
+                    </ul>
+				</p>
+			</div>
+
+			<div class="footer-center">
+                <h2>Support</h2>
+				<div>
+					<p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Ankush Singh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">ankushsingh@supportsmks.com</a></i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Jaquavious Gotel &nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">jaquaviousgotel@supportsmks.com</a></i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+				</div>
+			</div>
+			<div class="footer-right">
+                <h2>Web Service</h2>
+				<p class="footer-company-about"></p>
+				<div class="footer-icons">
+                    <ul>
+                        <li>
+                            <p>
+                                William Lovelace &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">williamlovelace@webservicesmks.com</a></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Roshin Roychan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope"><a href="mailto:support@smks.com">roshinroychan@webservicesmks.com</a></i>
+                            </p>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</footer>
+        {% load static  %}
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>

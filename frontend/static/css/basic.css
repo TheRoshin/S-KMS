@@ -1,0 +1,69 @@
+* {box-sizing: border-box;}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-color: #b2b7bb;
+  background: #2c292f;*/
+  background-color: #767B91;
+}
+
+
+button {
+    /*background-color: #04AA6D;
+    background-color: #96B2F3;*/
+    background-color: darkblue;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.left{
+    display: inline-block;
+    align-items: left;
+}
+.right{
+    float: right;
+}
+  /*.right-menu a{
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.7);
+    width:100%;
+    height: 50px;
+    display: flex;
+    margin: 0px;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.03);
+    text-align: right;
+  }
+  
+  .right-menu a:hover{
+      color: #0b9d8a;
+      transition: all ease 0.3s;
+  }*/
+
+.container{
+    /*background-color: white;*/
+    background-color: #C7CCDB;
+}
+
+a{
+  color: white;
+  text-decoration: auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul{
+  list-style-type: none;
+}
+  
+  
+  
