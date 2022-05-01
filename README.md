@@ -11,12 +11,22 @@ The program is a Security Knowledge Management System wich the user to create us
 * Ubuntu 20.04
 
 ## Instal Django FrameWork
-* Windows 10 -- Django
-` 
-py -m pip install Django
-`
+* Windows 10
+  ` 
+  py -m pip install Django
+  `
 * Mac -- Django
    * If you have not installed Python 3, then please install Python 3.
+   * Step-by-step bullets
+``````
+Install Pillow --> pip install pillow
+Run the server --> python .\manage.py runserver
+Create a admin ---> python .\manage.py createsuperuser
+Make migrations --> python .\manage.py makemigrations
+Migrate --> python .\manage.py migrate
+collect static file --> python .\manage.py collectstatic
+change password --> python .\manage.py changepassword <username>
+``````
    ``
    brew install python3
    ``
