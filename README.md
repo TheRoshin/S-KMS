@@ -1,5 +1,5 @@
 # Security Knowledge Management System or S-KMS
-S-purpose KMS's is to save and retrieve corporate information security knowledge. Target users would be company employees who utilize information systems on a regular basis. Users may also contribute to knowledge development by submitting questions, thoughts, and solutions on the portal.
+The purpose of S-KMS is to store and recover company information security expertise. The intended users would be company workers who utilize information systems on a regular basis. Users can also contribute to the knowledge-creation process by submitting questions, thoughts, and solutions through the site.
 
 ## Description
 The program is a Security Knowledge Management System wich the user to create username and password. The portal have a fourm to fill out some of the security question that the other users can answer. You will be able to look the question by using the search function.
