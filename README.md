@@ -17,7 +17,6 @@ The program is a Security Knowledge Management System wich the user to create us
   ``
 * Mac -- Django
    * If you have not installed Python 3, then please install Python 3.
-   * Step-by-step bullets
    ``
    brew install python3
    ``
