@@ -7,7 +7,7 @@ The program is a Security Knowledge Management System wich the user to create us
 # Getting Started
 ## Dependencies
 * Windows 10 -- Django
-`
+` 
 py -m pip install Django
 `
 * Mac -- Django
@@ -17,7 +17,7 @@ py -m pip install Django
  ``
  * Install pip or upgrade pip.
  `
- sudo easy_install pip
+  sudo easy_install pip
  `
  * Install virtual environment package virtualenv to isolate the Django project.
  `
