@@ -141,9 +141,9 @@ python .\manage.py migrate or python manage.py migrate
 python .\manage.py collectstatic or python manage.py collectstatic
 `
 * change password
-`
+`````
 python .\manage.py changepassword <username> or python manage.py changepassword <username>
-`
+`````
 
 ``````
 Install Pillow --> pip install pillow
