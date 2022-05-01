@@ -27,9 +27,9 @@ change password --> python .\manage.py changepassword <username>
 # Authors
 Contributors names
     
-Roshin Roychan
-William Lovelace
-Jaquavious Gotel
-Ankush Singh
+1. Roshin Roychan
+2. William Lovelace
+3. Jaquavious Gotel
+4. Ankush Singh
 
 
