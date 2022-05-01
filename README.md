@@ -12,10 +12,37 @@ The program is a Security Knowledge Management System wich the user to create us
 
 ## Instal Django FrameWork
 * Windows 10
-  ``
-  py -m pip install Django
-  ``
-* Mac -- Django
+    * If you have not installed Python 3, then please install Python 3.
+    * Upgrading Pip
+    ``
+     python -m pip install --upgrade pip
+    ``
+    * Creating a Project Directory
+        * Change into your Desktop directory with the cd command
+        `
+        cd Desktop
+        `
+        * Create the directory using the mkdir command
+        `
+         mkdir django_project
+        `
+        * Move into the django_project directory using the cd command
+        `
+        cd django_project
+        `
+    * Creating the Virtual EnvironmentPermalink
+    ` 
+    python -m venv venv
+    `
+    * Activating the Virtual EnvironmentPermalink
+    `
+    venv\Scripts\activate
+    `
+    * Installing Django
+    `
+    py -m pip install Django or pip install django==3.1
+    `
+* macOS
    * If you have not installed Python 3, then please install Python 3.
    ``
    brew install python3
@@ -32,6 +59,19 @@ The program is a Security Knowledge Management System wich the user to create us
    `
    sudo pip install django==3.0.1
    `
+* Ubuntu 20.04
+    * Update the package list
+    `
+    sudo apt update
+    `
+    * Update the python version
+    `
+    python3 -V
+    `
+    * Install Django
+    `
+    sudo apt install python3-django
+    `
 
 ## Installing
 * How/where to download your program
