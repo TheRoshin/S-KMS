@@ -9,13 +9,13 @@ The program is a Security Knowledge Management System wich the user to create us
 * Windows 10 -- Django
 `py -m pip install Django`
 * Mac -- Django
- ** If you have not installed Python 3, then please install Python 3.
+ * If you have not installed Python 3, then please install Python 3.
  `brew install python3`
- ** Install pip or upgrade pip.
+ * Install pip or upgrade pip.
  `sudo easy_install pip`
- ** Install virtual environment package virtualenv to isolate the Django project.
+ * Install virtual environment package virtualenv to isolate the Django project.
  `sudo pip install virtualenv`
- ** Install the Django framework using pip.
+ * Install the Django framework using pip.
  `sudo pip install django==3.0.1`
 
 ## Installing
