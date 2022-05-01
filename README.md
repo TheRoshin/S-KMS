@@ -1,5 +1,5 @@
 # Security Knowledge Management System or S-KMS
-The program is a Security Knowledge Management System wich the user to create username and password. The portal have a fourm to fill out some of the security question that the other users can answer. You will be able to look the question by using the search function.
+S-purpose KMS's is to save and retrieve corporate information security knowledge. Target users would be company employees who utilize information systems on a regular basis. Users may also contribute to knowledge development by submitting questions, thoughts, and solutions on the portal.
 
 ## Description
 The program is a Security Knowledge Management System wich the user to create username and password. The portal have a fourm to fill out some of the security question that the other users can answer. You will be able to look the question by using the search function.
