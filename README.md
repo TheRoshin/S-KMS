@@ -17,6 +17,7 @@ The program is a Security Knowledge Management System wich the user to create us
 * How to run the program
 * Step-by-step bullets
 ``````
+Install Pillow --> pip install pillow
 Run the server --> python .\manage.py runserver
 Create a admin ---> python .\manage.py createsuperuser
 Make migrations --> python .\manage.py makemigrations
