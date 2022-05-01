@@ -11,10 +11,10 @@ The program is a Security Knowledge Management System wich the user to create us
 py -m pip install Django
 `
 * Mac -- Django
- * If you have not installed Python 3, then please install Python 3.
- `
+   * If you have not installed Python 3, then please install Python 3.
+ ``
  brew install python3
- `
+ ``
  * Install pip or upgrade pip.
  `
  sudo easy_install pip
