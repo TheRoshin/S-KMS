@@ -6,8 +6,17 @@ The program is a Security Knowledge Management System wich the user to create us
 
 # Getting Started
 ## Dependencies
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Windows 10 -- Django
+`py -m pip install Django`
+* Mac -- Django
+ ** If you have not installed Python 3, then please install Python 3.
+ `brew install python3`
+ ** Install pip or upgrade pip.
+ `sudo easy_install pip`
+ ** Install virtual environment package virtualenv to isolate the Django project.
+ `sudo pip install virtualenv`
+ ** Install the Django framework using pip.
+ `sudo pip install django==3.0.1`
 
 ## Installing
 * How/where to download your program
