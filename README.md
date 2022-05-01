@@ -16,12 +16,14 @@ The program is a Security Knowledge Management System wich the user to create us
 ## Executing program
 * How to run the program
 * Step-by-step bullets
-``````Run the server --> python .\manage.py runserver
-    Create a admin ---> python .\manage.py createsuperuser
-    Make migrations --> python .\manage.py makemigrations
-    Migrate --> python .\manage.py migrate
-    collect static file --> python .\manage.py collectstatic
-    change password --> python .\manage.py changepassword <username>``````
+``````
+Run the server --> python .\manage.py runserver
+Create a admin ---> python .\manage.py createsuperuser
+Make migrations --> python .\manage.py makemigrations
+Migrate --> python .\manage.py migrate
+collect static file --> python .\manage.py collectstatic
+change password --> python .\manage.py changepassword <username>
+``````
 
 @name{
     Security Knowledge Management System
