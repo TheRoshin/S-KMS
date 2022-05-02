@@ -125,7 +125,7 @@ sudo apt install python-pi
     * Finally, navigate to that selected folder, and you’ll find all of those Github files that we downloaded right there
 * Where to download S-KMS program
     * All of the files will begin downloading to your computer, usually in your Downloads folder
-    * Move the folder to documents
+    * Move the folder to Documents
 
 ## Executing program
 * How to run the S-KMS
