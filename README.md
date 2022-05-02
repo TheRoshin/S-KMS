@@ -1,5 +1,5 @@
 # Security Knowledge Management System or S-KMS
-The goal of C-KMS is to save and retrieve corporate information security knowledge, promote cooperation, find knowledge sources, mine repositories for hidden knowledge, and capture and apply knowledge in the workplace. Company personnel that use information systems in their daily job would be the target users of C-KMS. The portal and database are two key technologies that will play a key role in developing, implementing, and maintaining C-KMS. To that end, general users (company employees) should feel at ease obtaining security-related knowledge they need at work (i.e., C-ease KMS's of use and usability), while they can also participate in the knowledge-creation process by posting questions, insights, and solutions related to corporate information security via the portal.
+The purpose of S-KMS is to store and recover company information security expertise. The intended users would be company employees who utilize information systems on a regular basis. Users may also contribute to the knowledge-creation process by posting questions, thoughts, and solutions through the site.
 
 # Description
 The program is a Security Knowledge Management System wich the user to create username and password. The portal have a forum to fill out some of the security question that the other users can answer. You will be able to look the question by using the search function.The purpose of S-KMS is to store and recover company information security expertise. The intended users would be company workers who utilize information systems on a regular basis. Users can also contribute to the knowledge-creation process by submitting questions, thoughts, and solutions through the site. The User portal which allows the employee to Log in, sign up, and recover security credentials discussion forum for employees to Share security knowledge, answer questions, and provide insight and there is also a ranking system which differentiates privileges between employees and administrators which has the highest priority in views and reply in the discussion forum.
@@ -24,7 +24,7 @@ The program is a Security Knowledge Management System wich the user to create us
 * Ubuntu 20.04
 
 
-## Install Django FrameWork
+## Install Django Framework
 * Windows 10
    * If you have not installed Python 3, then please install Python 3
    * Upgrading Pip
@@ -93,6 +93,29 @@ The program is a Security Knowledge Management System wich the user to create us
     `
     django-admin --version
     `
+    
+## Install Pillow
+* Window 10
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+or 
+pip install pillow
+```
+* macOS
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+or 
+pip3 install Pillow
+```
+* Ubuntu 20.04
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+or 
+sudo apt install python-pi 
+```
 
 ## Installing
 * How to dowload S-KMS progrma
@@ -100,7 +123,7 @@ The program is a Security Knowledge Management System wich the user to create us
     * Then, in the dropdown, select Download ZIP. All of the files will begin downloading to your computer, usually in your Downloads folder
     * Then, open your Downloads folder on your computer and find the ZIP file. You’ll want to right-click it and choose the option that says Extract All…, Unzip, or   Uncompress, and then select a folder where you want the files to end up
     * Finally, navigate to that selected folder, and you’ll find all of those Github files that we downloaded right there
-* where to download S-KMS program
+* Where to download S-KMS program
     * All of the files will begin downloading to your computer, usually in your Downloads folder
     * Move the folder to documents
 
@@ -120,9 +143,9 @@ The program is a Security Knowledge Management System wich the user to create us
         cd ~Downloads/S-KMS
         `
     * Run the server
-    `
+    ```
     python .\manage.py runserver or python manage.py runserver
-    `
+    ```
 ## Other Command
 * Create a admin
 ```
@@ -145,9 +168,6 @@ python .\manage.py collectstatic or python manage.py collectstatic
 python .\manage.py changepassword <username> or python manage.py changepassword <username>
 ```
 
-``````
-Install Pillow --> pip install pillow
-``````
 # Authors
 Contributors names
 1. Roshin Roychan
