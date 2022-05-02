@@ -170,9 +170,16 @@ python .\manage.py changepassword <username> or python manage.py changepassword 
 
 # Authors
 Contributors names
-1. Roshin Roychan
+
+1. Roshin Roychan 
+    * [@TheRoshin](https://github.com/TheRoshin)
 2. William Lovelace
+    * [@WilliamKL](https://github.com/WilliamKL)
 3. Jaquavious Gotel
+    * [@jgote1198](https://github.com/jgotell98)
 4. Ankush Singh
+    * [@KushAnku](https://github.com/KushAnku)
+
+
 
 
