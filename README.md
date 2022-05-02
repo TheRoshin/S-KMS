@@ -171,12 +171,12 @@ python .\manage.py changepassword <username> or python manage.py changepassword 
 # Authors
 Contributors names
 1. Roshin Roychan 
-    * @https://github.com/TheRoshin
+    * [@TheRoshin](https://github.com/TheRoshin)
 2. William Lovelace
-    * @https://github.com/TheRoshin
+    * [@WilliamKL](https://github.com/WilliamKL)
 3. Jaquavious Gotel
-    * @https://github.com/jgotell98
+    * [@jgote1198](https://github.com/jgotell98)
 4. Ankush Singh
-    * @https://github.com/KushAnku
+    * [@KushAnku](https://github.com/KushAnku)
 
 
