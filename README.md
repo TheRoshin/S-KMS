@@ -125,25 +125,25 @@ The program is a Security Knowledge Management System wich the user to create us
     `
 ## Other Command
 * Create a admin
-`
+```
 python .\manage.py createsuperuser or python manage.py createsuperuser
-`
+```
 * Make migration
-`
+```
 python .\manage.py makemigrations or python manage.py makemigrations
-`
+```
 * Migrate
-`
+```
 python .\manage.py migrate or python manage.py migrate
-`
+```
 * collect static file
-`
+```
 python .\manage.py collectstatic or python manage.py collectstatic
-`
+```
 * change password
-`````
+```
 python .\manage.py changepassword <username> or python manage.py changepassword <username>
-`````
+```
 
 ``````
 Install Pillow --> pip install pillow
