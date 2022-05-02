@@ -169,7 +169,7 @@ python .\manage.py changepassword <username> or python manage.py changepassword 
 ```
 
 # Authors
-Contributors names
+Contributors names and contact info
 
 1. Roshin Roychan 
     * [@TheRoshin](https://github.com/TheRoshin)
