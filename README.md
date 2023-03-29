@@ -176,7 +176,7 @@ Contributors names and contact info
 2. William Lovelace
     * [@WilliamKL](https://github.com/WilliamKL)
 3. Jaquavious Gotel
-    * [@jgote1198](https://github.com/jgotell98)
+    * [@jgotell98](https://github.com/jgotell98)
 4. Ankush Singh
     * [@KushAnku](https://github.com/KushAnku)
 
